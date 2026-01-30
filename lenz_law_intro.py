@@ -9,7 +9,9 @@ print("This simulator helps visualize the process of induced current and undesta
 
 # Simple Lenz's law demonstration
 
-magnet_direction = input("Is the magnet oving towards or away from the coil?")
+print("Assume that the coil is viewed from the side where the magnet enters.")
+magnet_direction = input("Is the magnet oving towards or away from the coil?").lower()
+print("According to Lenz's law, the induced current always opposes the change in magnetic flux linkage of the coil")
 
 if magnet_direction == "towards":
   current_direction = "anti-clockwise"
@@ -18,5 +20,5 @@ elif magnet_direction == "away":
 else:
   current_direction = "unknown"
 
-print("The induced current is:", current_direction)
+print("So the induced current is:", current_direction)
 
