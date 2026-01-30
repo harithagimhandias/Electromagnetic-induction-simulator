@@ -15,10 +15,12 @@ print("According to Lenz's law, the induced current always opposes the change in
 
 if magnet_direction == "towards":
   current_direction = "anti-clockwise"
+  arrow = "⟲"
 elif magnet_direction == "away":
   current_direction = "clockwise"
+  arrow = "⟳"
 else:
   current_direction = "unknown"
 
-print("So the induced current is:", current_direction)
+print("So the induced current is:", current_direction, arrow)
 
